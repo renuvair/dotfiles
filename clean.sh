@@ -13,5 +13,3 @@ rm -rf $HOME/.tmux.conf
 # clean existing zsh related files
 rm -rf $HOME/.zprezto
 rm -rf $HOME/.zlogin $HOME/.zlogout $HOME/.zpreztorc $HOME/.zprofile $HOME/.zshenv $HOME/.zshrc
-rm -rf $HOME/.zprezto
-rm -rf $HOME/.zlogin $HOME/.zlogout $HOME/.zpreztorc $HOME/.zprofile $HOME/.zshenv $HOME/.zshrc
