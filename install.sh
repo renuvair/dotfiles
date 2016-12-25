@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # vim
-sudo apt-get -y install vim
+apt-get -y install vim
 
 ln -s $PWD/src/.vim $HOME/.vim
 ln -s $PWD/src/.vimrc $HOME/.vimrc
@@ -13,17 +13,10 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -E -c PluginInstall -c q -c q
 
 # tmux
-sudo apt-get -y install tmux
+apt-get -y install tmux
 ln -s $PWD/src/.tmux.conf $HOME/.tmux.conf
 
 # zsh
-sudo apt-get -y install zsh 
+apt-get -y install zsh 
 
-# prezto
-zsh
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-chsh -s /bin/zsh
+# -- continue with prezto.sh
