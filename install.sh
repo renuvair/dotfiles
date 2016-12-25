@@ -1,32 +1,25 @@
 #!/bin/bash
 
-# install vim
+# vim
 sudo apt-get -y install vim
 
-# clean existing files and symlinks
-rm -f $HOME/.vimrc
-rm -rf $HOME/.vim
-rm -rf $PWD/src/.vim/bundle
 ln -s $PWD/src/.vim $HOME/.vim
 ln -s $PWD/src/.vimrc $HOME/.vimrc
 
-# install vundle
+# vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# exec :PluginInstall; TODO find out why double q command is needed
+# TODO find out why double q command is needed
 vim -E -c PluginInstall -c q -c q
 
-# install tmux
+# tmux
 sudo apt-get -y install tmux
-rm -rf $HOME/.tmux.conf
 ln -s $PWD/src/.tmux.conf $HOME/.tmux.conf
 
+# zsh
+sudo apt-get -y install zsh 
 
-#install zsh and prezto
-rm -rf .zprezto
-rm -rf .zlogin .zlogout .zpreztorc .zprofile .zshenv .zshrc
-sudo apt-get -y install tmux
-
+# prezto
 zsh
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 setopt EXTENDED_GLOB

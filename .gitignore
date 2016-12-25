@@ -1,1 +1,3 @@
 *.swp
+src/.vim/.netrwhist
+src/.vim/bundle/*
