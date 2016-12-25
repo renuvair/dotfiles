@@ -21,4 +21,4 @@ Fully-fledged vim, tmux, zsh + prezto combination
 
 # known issues
 - Problem: tmux does not work correclty with vim themes
-- Solution: run: tmux -2 when starting tmux (forces tmux to work with 256 colors). Add: tmux -2 to .zshrc file (the file might be read-only).
+- Solution: run: tmux -2 when starting tmux (forces tmux to work with 256 colors). Add: alias tmux="tmux -2" to .zshrc file (the file might be read-only).
