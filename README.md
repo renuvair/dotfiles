@@ -2,4 +2,10 @@
 dotfiles for unix environments
 
 # where to start
-run install.sh to set up Vim and make a link to .tmux.conf file
+
+1. run cleanup.sh
+2. run install.sh
+
+You're done!
+
+OBS: Only working for ubuntu os. Developed on xubuntu 16.10
