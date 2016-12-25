@@ -10,6 +10,8 @@ Using a clean Ubuntu installation:
 4. sudo ./clean.sh
 5. sudo ./install.sh
 6. sudo ./prezto.sh
+7. sudo chsh -s /bin/zsh
+8. Relog into your user
 
 You're done!
 OBS: Only working for ubuntu os. Developed on xubuntu 16.10
